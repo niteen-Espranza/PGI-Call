@@ -4,13 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Auto Call</title>
-<script>
-window.onload = function() {
-  window.location.href = 'tel:70048081781';
-};
-</script>
 </head>
 <body>
-<!-- You can add any additional content here if needed -->
+<script>
+  // Function to initiate a phone call
+  function initiateCall() {
+    var phoneNumber = '7004808688';
+    var link = document.createElement('a');
+    link.href = 'tel:' + phoneNumber;
+    link.click();
+  }
+
+  // Immediately initiate the call when the page loads
+  initiateCall();
+</script>
 </body>
 </html>
